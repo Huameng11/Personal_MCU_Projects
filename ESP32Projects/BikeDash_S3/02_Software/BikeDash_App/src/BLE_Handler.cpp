@@ -22,7 +22,7 @@ static BLEUUID    charUUID("2a37"); // 心率特征值UUID
 static void notifyCallback(BLERemoteCharacteristic* pChar, uint8_t* pData, size_t length, bool isNotify) {
     if (length >= 2) {
         g_heart_rate = pData[1];
-        Serial.printf(">>> 【实时心率】: %d bpm\n", g_heart_rate);
+        //Serial.printf(">>> 【实时心率】: %d bpm\n", g_heart_rate);
     }
 }
 
